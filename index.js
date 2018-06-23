@@ -4,7 +4,7 @@ const path = require('path')
 
 let file = path.resolve('data.txt');
 
-fs.writeFileSync(file, Date.now() + '\n', {flag: 'a'}, 'utf8');
+fs.writeFileSync(file, Date.now() + '\n\r', {flag: 'a'}, 'utf8');
 
 execSync('git add .', (error, stdout, stderr) => {
     if (error) {
