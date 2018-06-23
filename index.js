@@ -21,3 +21,9 @@ execSync('git commit -m "update"', (error, stdout, stderr) => {
     }
     console.log(stdout);
 });
+execSync('git push', (error, stdout, stderr) => {
+    if (error) {
+        throw error;
+    }
+    console.log(stdout);
+});
