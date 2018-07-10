@@ -6,7 +6,7 @@ const schedule = require('node-schedule');
 
 let file = path.resolve('data.txt');
 
-schedule.scheduleJob('0 0 * * * *', function () {
+schedule.scheduleJob('0 30 * * * *', function () {
     autoCommit()
 });
 
